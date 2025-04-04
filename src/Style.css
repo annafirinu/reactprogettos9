@@ -1,0 +1,46 @@
+.backgroundColor {
+  background-color: #141414;
+}
+
+.colorfooter {
+  color: #818181;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 1px solid #818181;
+  color: #818181;
+}
+.transparent {
+  background-color: transparent;
+}
+.marginfooter {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.marginbottom {
+  margin-bottom: 40px;
+}
+
+.img {
+  width: 20px;
+  height: 20px;
+}
+
+.marginleft {
+  margin-left: 70px;
+  padding-left: 40%;
+}
+
+.padding {
+  padding-left: 4rem;
+}
+.bordercolor {
+  color: #818181;
+}
+.form-check-input {
+  background-color: transparent; /* Rende lo sfondo della checkbox trasparente */
+  border: 0px solid #ccc;
+}
