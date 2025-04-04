@@ -50,7 +50,7 @@ class Film extends Component {
                     className="d-block w-100"
                     src={img.Poster}
                     alt={`Image ${index + 1}`}
-                    style={{ borderRadius: "8px" }} // Optional: styling for rounded corners
+                    style={{ borderRadius: "8px" }}
                   />
                 </div>
               ))}
@@ -67,7 +67,7 @@ class Film extends Component {
                     className="d-block w-100"
                     src={img.Poster}
                     alt={`Image ${index + 1}`}
-                    style={{ borderRadius: "8px" }} // Optional: styling for rounded corners
+                    style={{ borderRadius: "8px" }}
                   />
                 </div>
               ))}
@@ -84,7 +84,7 @@ class Film extends Component {
                     className="d-block w-100 text-center"
                     src={img.Poster}
                     alt={`Image ${index + 1}`}
-                    style={{ borderRadius: "8px" }} // Optional: styling for rounded corners
+                    style={{ borderRadius: "8px" }}
                   />
                 </div>
               ))}
