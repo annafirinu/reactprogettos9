@@ -41,13 +41,47 @@ class Film extends Component {
     return (
       <>
         <h2 className="ms-5 ps-4 mb-1 mt-3 text-white">Harry Potter</h2>
-        <Carousel className="m-3 ms-5 ps-4">
+        <Carousel className="m-3 ms-5 ps-4 d-none d-lg-block">
           <Carousel.Item>
             <div className="d-flex flex-wrap justify-content-between  d-lg-flex">
               {this.state.film.slice(0, 6).map((img, index) => (
                 <div key={index} className="p-2" style={{ maxWidth: "16.6%" }}>
                   <img
                     className="d-block w-100"
+                    src={img.Poster}
+                    alt={`Image ${index + 1}`}
+                    style={{ borderRadius: "8px" }} // Optional: styling for rounded corners
+                  />
+                </div>
+              ))}
+            </div>
+          </Carousel.Item>
+        </Carousel>
+
+        <Carousel className="m-3 ms-5 ps-4 d-none d-lg-none d-md-block">
+          <Carousel.Item>
+            <div className="d-flex flex-wrap justify-content-between ">
+              {this.state.film.slice(0, 3).map((img, index) => (
+                <div key={index} className="p-2" style={{ maxWidth: "33%" }}>
+                  <img
+                    className="d-block w-100"
+                    src={img.Poster}
+                    alt={`Image ${index + 1}`}
+                    style={{ borderRadius: "8px" }} // Optional: styling for rounded corners
+                  />
+                </div>
+              ))}
+            </div>
+          </Carousel.Item>
+        </Carousel>
+
+        <Carousel className="m-3 ms-5 ps-4  d-lg-none d-md-none d-sx-block">
+          <Carousel.Item>
+            <div className="d-flex flex-wrap justify-content-center">
+              {this.state.film.slice(0, 1).map((img, index) => (
+                <div key={index} className="p-2" style={{ maxWidth: "99%" }}>
+                  <img
+                    className="d-block w-100 text-center"
                     src={img.Poster}
                     alt={`Image ${index + 1}`}
                     style={{ borderRadius: "8px" }} // Optional: styling for rounded corners
